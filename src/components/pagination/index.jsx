@@ -17,7 +17,11 @@ export const Pagination = ({ active, setActive }) => {
         <span className={css.title}>Page {active} </span>
         <ul>
           <li>
-            <button className={css.cta} onClick={backFn}>
+            <button
+              className={css.cta}
+              onClick={backFn}
+              disabled={active === 1}
+            >
               <IoCaretBack />
               Back
             </button>
