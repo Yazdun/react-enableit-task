@@ -1,0 +1,14 @@
+.wrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.title {
+  font-weight: bold;
+}

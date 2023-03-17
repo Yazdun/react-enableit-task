@@ -1,6 +1,6 @@
 import './App.css'
 import { MotionConfig } from 'framer-motion'
-import { Container, Topbar, Users } from './components'
+import { Container, Pagination, Topbar, Users } from './components'
 import { useThemeContext } from './context'
 import data from './mocks/users.json'
 
@@ -12,6 +12,7 @@ function App() {
       <main data-theme={theme}>
         <Topbar />
         <Container>
+          <Pagination />
           <Users data={data?.users?.slice(0, 10)} />
         </Container>
       </main>
