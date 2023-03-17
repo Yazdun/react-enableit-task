@@ -19,8 +19,8 @@ export const Modal = ({ setOpen, data }) => {
         </button>
         <div className={css.header}>
           <UserImage big />
-          <p>{FirstNameLastName}</p>
-          <p>
+          <p className={css.title}>{FirstNameLastName}</p>
+          <p className={css.subtitle}>
             <span>{JobTitle}</span> at <span>{Company}</span>
           </p>
         </div>
