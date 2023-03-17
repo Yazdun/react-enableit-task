@@ -2,20 +2,22 @@
 
 :root {
   --background-1: hsl(240, 100%, 98%);
-  --background-2: hsl(240, 100%, 97%);
-  --background-3: hsl(240, 100%, 92%);
-  --background-4: hsl(240, 100%, 95.9%);
+  --background-2: hsl(240, 100%, 96.3%);
 
-  --foreground-1: #2b3442;
+  --foreground-1: hsl(217, 21%, 21%);
+  --foreground-2: hsl(217, 29%, 56%);
+
+  --gradient-1: linear-gradient(135deg, #ce9ffc 10%, #7367f0 100%);
 }
 
 [data-theme='dark'] {
   --background-1: hsl(216, 27%, 7%);
   --background-2: hsl(215, 21%, 11.9%);
-  --background-3: hsl(215, 21%, 15.9%);
-  --background-4: hsl(215, 21%, 15.9%);
 
-  --foreground-1: #ffffff;
+  --foreground-1: hsl(0, 0%, 100%);
+  --foreground-2: hsl(0, 0%, 57%);
+
+  --gradient-1: linear-gradient(135deg, #6c23b6 10%, #3c2cec 100%);
 }
 
 *,
@@ -34,11 +36,12 @@ main {
   background-color: var(--background-1);
   color: var(--foreground-1);
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-block: 5rem;
+  padding-block: 3rem;
   transition: 0.3s background;
+}
+
+ul {
+  list-style-type: none;
 }
 
 input,

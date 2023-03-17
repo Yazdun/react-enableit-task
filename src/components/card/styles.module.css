@@ -1,0 +1,48 @@
+.card {
+  padding: 1rem;
+  background-color: var(--background-2);
+  transition: 0.3s background;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.image {
+  width: 3.2rem;
+  height: 3.2rem;
+  color: white;
+  background-image: var(--gradient-1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.title {
+  font-weight: 600;
+}
+
+.subtitle {
+  color: var(--foreground-2);
+  font-size: 0.9rem;
+}
+
+.action {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

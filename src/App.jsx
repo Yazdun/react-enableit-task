@@ -1,7 +1,8 @@
 import './App.css'
 import { MotionConfig } from 'framer-motion'
-import { Container, ThemeToggle, Topbar } from './components'
+import { Container, Topbar, Users } from './components'
 import { useThemeContext } from './context'
+import data from './mocks/users.json'
 
 function App() {
   const { theme } = useThemeContext()
@@ -11,6 +12,7 @@ function App() {
       <main data-theme={theme}>
         <Container>
           <Topbar />
+          <Users data={data?.users?.slice(0, 10)} />
         </Container>
       </main>
     </MotionConfig>
