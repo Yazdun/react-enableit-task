@@ -30,7 +30,7 @@ export const ThemeToggle = () => {
   )
 }
 
-const ThemeState = ({ text, icon }) => {
+const ThemeState = ({ icon }) => {
   return (
     <motion.span {...framer_toggle} className={css.state}>
       {icon}
@@ -40,16 +40,12 @@ const ThemeState = ({ text, icon }) => {
 
 export const framer_toggle = {
   initial: {
-    y: '-100%',
     opacity: 0,
   },
   animate: {
-    y: 0,
-    scale: 1,
     opacity: 1,
   },
   exit: {
-    y: '100%',
     opacity: 0,
   },
   transition: { duration: 0.3 },
