@@ -2,7 +2,7 @@ import css from './styles.module.css'
 import { AiOutlineUser } from 'react-icons/ai'
 import { FaEye } from 'react-icons/fa'
 import { useState } from 'react'
-import { Modal } from '../'
+import { Modal, UserImage } from '../'
 import { AnimatePresence } from 'framer-motion'
 
 export const Card = ({ data }) => {
@@ -12,13 +12,11 @@ export const Card = ({ data }) => {
   return (
     <>
       <AnimatePresence mode="wait" initial={false}>
-        {modal && <Modal setOpen={setModal} />}
+        {modal && <Modal setOpen={setModal} data={data} />}
       </AnimatePresence>
       <li className={css.card}>
         <div className={css.info}>
-          <div className={css.image}>
-            <AiOutlineUser />
-          </div>
+          <UserImage />
           <div className={css.desc}>
             <p className={css.title}>{FirstNameLastName}</p>
             <p className={css.subtitle}>{JobTitle}</p>

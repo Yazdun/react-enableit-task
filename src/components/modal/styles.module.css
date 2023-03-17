@@ -35,3 +35,10 @@
   transition: 0.3s color;
   display: flex;
 }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}

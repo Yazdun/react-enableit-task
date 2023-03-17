@@ -1,0 +1,18 @@
+.image {
+  color: white;
+  background-image: var(--gradient-1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sm {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.big {
+  width: 5rem;
+  height: 5rem;
+}

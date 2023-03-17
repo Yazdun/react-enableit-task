@@ -3,8 +3,10 @@ import { useRef } from 'react'
 import { useOnClickOutside } from '../../hooks'
 import { VscChromeClose } from 'react-icons/vsc'
 import { motion } from 'framer-motion'
+import { UserImage } from '../image'
 
-export const Modal = ({ setOpen, email }) => {
+export const Modal = ({ setOpen, data }) => {
+  const { JobTitle, EmailAddress, FirstNameLastName, Company } = data
   const ref = useRef()
 
   useOnClickOutside(ref, () => setOpen(false))
@@ -15,13 +17,13 @@ export const Modal = ({ setOpen, email }) => {
         <button onClick={() => setOpen(false)} className={css.cta}>
           <VscChromeClose />
         </button>
-        <h1>User Info</h1>
-        <p className={css.desc}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. In distinctio
-          velit id aut eaque quidem natus? Eveniet, aliquam totam laboriosam
-          deleniti aperiam accusantium veritatis sequi, delectus repellendus,
-          dolores minima autem.
-        </p>
+        <div className={css.header}>
+          <UserImage big />
+          <p>{FirstNameLastName}</p>
+          <p>
+            <span>{JobTitle}</span> at <span>{Company}</span>
+          </p>
+        </div>
       </motion.div>
     </motion.div>
   )
