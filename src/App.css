@@ -75,7 +75,8 @@ button:disabled {
   opacity: 0.3;
 }
 
-button:focus-visible {
+button:focus-visible,
+a:focus-visible {
   box-shadow: var(--boxshadow-4);
 }
 
