@@ -11,7 +11,11 @@ export const Source = () => {
         |
       </p>
 
-      <a href="https://yazdun.com" target="_blank" rel="noreferrer">
+      <a
+        href="https://github.com/Yazdun/react-enableit-task"
+        target="_blank"
+        rel="noreferrer"
+      >
         Source Code
       </a>
     </div>
