@@ -8,6 +8,7 @@
   --foreground-2: hsl(217, 29%, 56%);
 
   --gradient-1: linear-gradient(135deg, #ce9ffc 10%, #7367f0 100%);
+  --transparent-1: rgba(0, 0, 0, 0.7);
 }
 
 [data-theme='dark'] {
@@ -18,6 +19,7 @@
   --foreground-2: hsl(0, 0%, 57%);
 
   --gradient-1: linear-gradient(135deg, #6c23b6 10%, #3c2cec 100%);
+  --transparent-1: rgba(0, 0, 0, 0.7);
 }
 
 *,
