@@ -1,6 +1,6 @@
 import './App.css'
 import { MotionConfig } from 'framer-motion'
-import { ThemeToggle } from './components'
+import { Container, ThemeToggle, Topbar } from './components'
 import { useThemeContext } from './context'
 
 function App() {
@@ -9,8 +9,9 @@ function App() {
   return (
     <MotionConfig reducedMotion="user">
       <main data-theme={theme}>
-        <h1>hello</h1>
-        <ThemeToggle />
+        <Container>
+          <Topbar />
+        </Container>
       </main>
     </MotionConfig>
   )
