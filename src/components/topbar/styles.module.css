@@ -2,3 +2,13 @@
   display: flex;
   justify-content: space-between;
 }
+
+.nav {
+  padding-block: 1rem;
+  background-color: var(--background-2);
+  transition: 0.3s background;
+}
+
+.title {
+  font-size: 1.3rem;
+}

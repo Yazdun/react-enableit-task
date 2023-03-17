@@ -10,8 +10,8 @@ function App() {
   return (
     <MotionConfig reducedMotion="user">
       <main data-theme={theme}>
+        <Topbar />
         <Container>
-          <Topbar />
           <Users data={data?.users?.slice(0, 10)} />
         </Container>
       </main>
