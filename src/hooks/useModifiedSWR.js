@@ -8,7 +8,7 @@
 
 import axios from 'axios'
 import useSWR from 'swr'
-import { baseURL } from '../api/_api'
+import { baseURL } from '../_api'
 
 export function useModifiedSWR(url) {
   const APIClient = axios.create({ baseURL })
