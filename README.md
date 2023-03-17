@@ -1,5 +1,3 @@
-complete the readme file ...
-
 <div id="top"></div>
 
 <!-- PROJECT LOGO -->
@@ -30,6 +28,17 @@ complete the readme file ...
 ![Javascript](https://img.shields.io/badge/-Javascript-F7DF1E?style=flat&logo=Javascript&logoColor=black)
 
 </div>
+
+# Introduction
+
+Hello there 👋 This is a simple web application that fetches data from an
+external API and displays the list of users. I created this app using CRA and
+JavaScript
+
+I used CSS modules for styling and framer motion to create smooth transitions.
+
+Also I used SWR for data fetching and caching requests for better app
+performance.
 
 # Getting Started
 
