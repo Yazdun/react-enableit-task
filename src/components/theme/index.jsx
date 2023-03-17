@@ -11,6 +11,7 @@ import { useThemeContext } from '../../context'
 import { IoMdSunny } from 'react-icons/io'
 import { IoMoon } from 'react-icons/io5'
 import { motion, AnimatePresence } from 'framer-motion'
+import cn from 'classnames'
 
 export const ThemeToggle = () => {
   const { theme, setTheme } = useThemeContext()
@@ -23,29 +24,35 @@ export const ThemeToggle = () => {
         {theme === 'light' ? (
           <ThemeState icon={<IoMdSunny />} key="light" />
         ) : (
-          <ThemeState icon={<IoMoon />} key="dark" />
+          <ThemeState icon={<IoMoon />} dark key="dark" />
         )}
       </AnimatePresence>
     </button>
   )
 }
 
-const ThemeState = ({ icon }) => {
+const ThemeState = ({ icon, dark }) => {
   return (
-    <motion.span {...framer_toggle} className={css.state}>
+    <motion.div
+      {...framer_toggle}
+      className={cn(css.state, dark ? css.dark : css.light)}
+    >
       {icon}
-    </motion.span>
+    </motion.div>
   )
 }
 
 export const framer_toggle = {
   initial: {
+    scale: 0,
     opacity: 0,
   },
   animate: {
+    scale: 1,
     opacity: 1,
   },
   exit: {
+    scale: 0,
     opacity: 0,
   },
   transition: { duration: 0.3 },

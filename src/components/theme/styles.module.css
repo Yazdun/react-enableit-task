@@ -1,3 +1,11 @@
 .cta svg {
   font-size: 1.5rem;
 }
+
+.dark {
+  color: #eab308;
+}
+
+.light {
+  color: black;
+}
