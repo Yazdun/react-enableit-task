@@ -3,7 +3,7 @@
   top: 0;
   padding-block: 2rem;
   background-color: var(--background-1);
-  transition: 0.3s background;
+  transition: 0.3s background, 0.3s boxshadow;
 }
 
 .wrapper ul {
@@ -28,4 +28,9 @@
 
 .cta svg {
   font-size: 1.1rem;
+}
+
+.scrolled {
+  background-color: var(--background-2);
+  box-shadow: var(--boxshadow-3);
 }

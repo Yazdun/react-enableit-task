@@ -12,6 +12,7 @@
 
   --boxshadow-1: rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
   --boxshadow-2: rgba(0, 0, 0, 0.05) 0px 0px 0px 2px;
+  --boxshadow-3: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 [data-theme='dark'] {
@@ -26,6 +27,7 @@
 
   --boxshadow-1: rgba(140, 140, 150, 0.329) 0px 0px 0px 1px;
   --boxshadow-2: rgba(140, 140, 150, 0.1) 0px 0px 0px 2px;
+  --boxshadow-3: rgb(80, 80, 80) 0px 0px 0px 2px;
 }
 
 *,
