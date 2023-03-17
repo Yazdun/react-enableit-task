@@ -19,7 +19,7 @@ function App() {
         <Topbar />
         <Pagination active={active} setActive={setActive} />
         <Container>
-          <Users data={data?.users?.slice(0, 10)} />
+          <Users data={data?.users?.slice(0, 10)} isLoading={isLoading} />
         </Container>
       </main>
     </MotionConfig>

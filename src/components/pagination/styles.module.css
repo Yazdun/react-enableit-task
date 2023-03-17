@@ -4,6 +4,7 @@
   padding-block: 2rem;
   background-color: var(--background-1);
   transition: 0.3s background, 0.3s boxshadow;
+  z-index: 10;
 }
 
 .wrapper ul {
