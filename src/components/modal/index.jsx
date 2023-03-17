@@ -4,9 +4,11 @@ import { useOnClickOutside } from '../../hooks'
 import { VscChromeClose } from 'react-icons/vsc'
 import { motion } from 'framer-motion'
 import { UserImage } from '../image'
+import { HiOutlineMail } from 'react-icons/hi'
+import { FiPhone } from 'react-icons/fi'
 
 export const Modal = ({ setOpen, data }) => {
-  const { JobTitle, EmailAddress, FirstNameLastName, Company } = data
+  const { JobTitle, EmailAddress, FirstNameLastName, Company, Phone } = data
   const ref = useRef()
 
   useOnClickOutside(ref, () => setOpen(false))
@@ -24,6 +26,16 @@ export const Modal = ({ setOpen, data }) => {
             <span>{JobTitle}</span> at <span>{Company}</span>
           </p>
         </div>
+        <ul className={css.container}>
+          <li>
+            <span>{EmailAddress}</span>
+            <HiOutlineMail />
+          </li>
+          <li>
+            <span>{Phone}</span>
+            <FiPhone />
+          </li>
+        </ul>
       </motion.div>
     </motion.div>
   )
