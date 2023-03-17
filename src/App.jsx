@@ -11,8 +11,6 @@ function App() {
   const { theme } = useThemeContext()
   const { data, isLoading } = useModifiedSWR(_getUsers(active))
 
-  console.log(data)
-
   return (
     <MotionConfig reducedMotion="user">
       <main data-theme={theme}>

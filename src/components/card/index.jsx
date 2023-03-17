@@ -1,5 +1,4 @@
 import css from './styles.module.css'
-import { AiOutlineUser } from 'react-icons/ai'
 import { FaEye } from 'react-icons/fa'
 import { useState } from 'react'
 import { Modal, UserImage } from '../'
