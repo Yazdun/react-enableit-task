@@ -12,7 +12,7 @@ export const Pagination = ({ active, setActive }) => {
     active === 1 ? setActive(1) : setActive(prev => prev - 1)
 
   return (
-    <div className={cn(css.wrapper, scrollDirection > 100 && css.scrolled)}>
+    <div className={cn(css.wrapper, scrollDirection > 70 && css.scrolled)}>
       <Container className={css.container}>
         <p className={css.title}>Page {active}</p>
         <ul>

@@ -1,6 +1,6 @@
 import './App.css'
 import { MotionConfig } from 'framer-motion'
-import { Container, Pagination, Topbar, Users } from './components'
+import { Container, Pagination, Source, Topbar, Users } from './components'
 import { useThemeContext } from './context'
 import { useModifiedSWR } from './hooks'
 import { _getUsers } from './_api'
@@ -20,6 +20,7 @@ function App() {
         <Pagination active={active} setActive={setActive} />
         <Container>
           <Users data={data?.users?.slice(0, 10)} isLoading={isLoading} />
+          <Source />
         </Container>
       </main>
     </MotionConfig>

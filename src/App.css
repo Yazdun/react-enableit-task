@@ -56,6 +56,12 @@ ul {
   list-style-type: none;
 }
 
+a {
+  all: unset;
+  color: #3b82f6;
+  cursor: pointer;
+}
+
 input,
 button,
 textarea,
