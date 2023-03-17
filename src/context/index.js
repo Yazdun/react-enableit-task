@@ -1,1 +1,1 @@
-export { ThemeProvider, useTheme } from './ThemeCTX'
+export { ThemeProvider, useThemeContext } from './ThemeCTX'

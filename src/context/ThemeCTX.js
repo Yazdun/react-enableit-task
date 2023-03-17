@@ -5,22 +5,28 @@
 |
 |  🐸 Returns: CTX PROVIDER / CTX HOOK
 *-------------------------------------------------------------------*/
-
 import { useContext, createContext } from 'react'
-import { useDarkMode } from '../hooks'
+import { useLocalStorage } from '../hooks'
 
 const ThemeContext = createContext()
 
 export function ThemeProvider({ children }) {
-  const [darkMode, setDarkMode] = useDarkMode()
+  const defaultDark =
+    window.matchMedia &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches
+
+  const [theme, setTheme] = useLocalStorage(
+    'theme',
+    defaultDark ? 'dark' : 'light',
+  )
 
   return (
-    <ThemeContext.Provider value={{ darkMode, setDarkMode }}>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
       {children}
     </ThemeContext.Provider>
   )
 }
 
-export function useTheme() {
+export function useThemeContext() {
   return useContext(ThemeContext)
 }
