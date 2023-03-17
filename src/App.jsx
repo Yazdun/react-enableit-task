@@ -11,8 +11,8 @@ function App() {
     <MotionConfig reducedMotion="user">
       <main data-theme={theme}>
         <Topbar />
+        <Pagination />
         <Container>
-          <Pagination />
           <Users data={data?.users?.slice(0, 10)} />
         </Container>
       </main>

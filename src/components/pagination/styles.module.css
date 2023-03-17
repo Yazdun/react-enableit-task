@@ -1,7 +1,9 @@
 .wrapper {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  padding-block: 2rem;
+  background-color: var(--background-1);
+  transition: 0.3s background;
 }
 
 .wrapper ul {
@@ -10,5 +12,20 @@
 }
 
 .title {
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cta {
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.cta svg {
+  font-size: 1.1rem;
 }
