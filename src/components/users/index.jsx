@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React FC Users
+|
+|  🐯 Purpose: RENDERS USERS BASED ON THE PASSED DATA
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 import { Card } from '../card'
 import { LoadingSkeleton } from '../skeleton'
 import css from './styles.module.css'

@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React FC Source
+|
+|  🐯 Purpose: LINKS TO PORTFOLIO AND SOURCE CODE
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 import css from './styles.module.css'
 
 export const Source = () => {

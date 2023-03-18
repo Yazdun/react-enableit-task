@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React FC Topbar
+|
+|  🐯 Purpose: DIPLAYS APP NAME AND THEME TOGGLE
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 import React from 'react'
 import { Container } from '../container'
 import { ThemeToggle } from '../theme'

@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React FC LoadingSkeleton
+|
+|  🐯 Purpose: DISPLAYS LOADING SKELETON
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 import { useThemeContext } from '../../context'

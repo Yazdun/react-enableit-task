@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React FC Card
+|
+|  🐯 Purpose: THIS CARD DISPLAYS USERS INFO
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 import css from './styles.module.css'
 import { FaEye } from 'react-icons/fa'
 import { useState } from 'react'

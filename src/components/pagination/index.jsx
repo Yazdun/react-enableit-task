@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React FC Pagination
+|
+|  🐯 Purpose: ALLOWS USERS TO TOGGLE PAGES
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 import { Container } from '../container'
 import css from './styles.module.css'
 import { IoCaretBack, IoCaretForward } from 'react-icons/io5'

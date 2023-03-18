@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React Hook useScrollDirection
+|
+|  🐯 Purpose: DETECS PAGE SCROLL POSITION
+|
+|  🐸 Returns: scrollDirection
+*-------------------------------------------------------------------*/
+
 import * as React from 'react'
 
 const THRESHOLD = 0

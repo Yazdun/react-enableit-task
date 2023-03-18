@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React FC UserImage
+|
+|  🐯 Purpose: A PLACEHOLDER FOR THE USERS IMAGE
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 import { AiOutlineUser } from 'react-icons/ai'
 import css from './styles.module.css'
 import cn from 'classnames'

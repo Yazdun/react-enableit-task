@@ -1,3 +1,11 @@
+/*-------------------------------------------------------------------
+|  🐼 React FC Modal
+|
+|  🐯 Purpose: THIS MODAL DISPLAYS MORE INFO ABOUT A USER
+|
+|  🐸 Returns:  JSX
+*-------------------------------------------------------------------*/
+
 import css from './styles.module.css'
 import { useRef } from 'react'
 import { useOnClickOutside } from '../../hooks'
