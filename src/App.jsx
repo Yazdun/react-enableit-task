@@ -1,3 +1,16 @@
+/*-------------------------------------------------------------------
+|                      🚀 REACT USERS APP 🚀
+|
+|  HELLO 👋! WELCOME TO USERS APP. THIS APP FETCHES DATA FROM AN 
+|  EXTERNAL API AND DISPLAYS THE DATA. I BUILT THIS APP AS A TASK
+|  FOR AN INTERVIEW. IF YOU HAVE ANY QUESTIONS, FEEL FREE TO REACH
+|  REACH OUT TO ME OR OPEN AN ISSUE ON GITHUB. THANKS!
+|
+|  🔗CREATOR: https://yazdun.com
+|  🔗SOURCE CODE: https://github.com/Yazdun/react-enableit-task
+|
+*-------------------------------------------------------------------*/
+
 import './App.css'
 import { MotionConfig } from 'framer-motion'
 import { Container, Pagination, Source, Topbar, Users } from './components'
@@ -12,7 +25,6 @@ function App() {
   const { data, isLoading } = useModifiedSWR(_getUsers(active))
 
   useEffect(() => {
-    // "document.documentElement.scrollTo" is the magic for React Router Dom v6
     document.documentElement.scrollTo({
       top: 0,
       left: 0,
